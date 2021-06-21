@@ -341,6 +341,9 @@ section {
         width:100%;
         border-left:0;
     }
+    body{
+        overflow-x: hidden;
+    }
 
 
 }
@@ -361,6 +364,9 @@ section {
     }
     .card{
         margin-bottom: 10px;
+    }
+    body{
+        overflow-x: hidden;
     }
 
 
@@ -386,6 +392,9 @@ section {
     #logo-img {
         padding: 0;
     }
+    body{
+        overflow-x: hidden;
+    }
 }
 
 /*tablet screens*/
@@ -399,11 +408,17 @@ section {
     .card .card-image img {
         width: 100%;
     }
+    body{
+        overflow-x: hidden;
+    }
 }
 
 @media (min-width: 1200px) {
     main {
         width: 100%;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
 
