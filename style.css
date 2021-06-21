@@ -349,6 +349,14 @@ section {
         text-align: right;
         line-height: 100px;
     }
+    .tagline2{
+        font-size: 35px;
+
+    }
+    .tagline3{
+        font-size: 18px;
+        line-height: 20px;
+    }
 
 
 }
@@ -377,6 +385,14 @@ section {
         font-size: 100px;
         text-align: right;
         line-height: 100px;
+    }
+    .tagline2{
+        font-size: 35px;
+
+    }
+    .tagline3{
+        font-size: 18px;
+        line-height: 20px;
     }
 
 
@@ -410,6 +426,14 @@ section {
         text-align: right;
         line-height: 100px;
     }
+    .tagline2{
+        font-size: 35px;
+
+    }
+    .tagline3{
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 
 /*tablet screens*/
@@ -431,6 +455,14 @@ section {
         text-align: right;
         line-height: 100px;
     }
+    .tagline2{
+        font-size: 35px;
+
+    }
+    .tagline3{
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -445,6 +477,15 @@ section {
         text-align: right;
         line-height: 100px;
     }
+    .tagline2{
+        font-size: 60px;
+
+    }
+    .tagline3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
 }
 
 
