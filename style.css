@@ -351,6 +351,7 @@ section {
     }
     .tagline2{
         font-size: 25px;
+        visibility: hidden;
 
     }
     .tagline3{
@@ -388,6 +389,9 @@ section {
     }
     .tagline2{
         font-size: 25px;
+        visibility: hidden;
+
+
 
     }
     .tagline3{
@@ -428,6 +432,8 @@ section {
     }
     .tagline2{
         font-size: 25px;
+        visibility: hidden;
+
 
     }
     .tagline3{
@@ -457,6 +463,8 @@ section {
     }
     .tagline2{
         font-size: 25px;
+        visibility: hidden;
+
 
     }
     .tagline3{
@@ -479,6 +487,8 @@ section {
     }
     .tagline2{
         font-size: 60px;
+        visibility: visible;
+
 
     }
     .tagline3{
