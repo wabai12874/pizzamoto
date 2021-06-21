@@ -344,6 +344,11 @@ section {
     body{
         overflow-x: hidden;
     }
+    .tagline{
+        font-size: 100px;
+        text-align: right;
+        line-height: 100px;
+    }
 
 
 }
@@ -367,6 +372,11 @@ section {
     }
     body{
         overflow-x: hidden;
+    }
+    .tagline{
+        font-size: 100px;
+        text-align: right;
+        line-height: 100px;
     }
 
 
@@ -395,6 +405,11 @@ section {
     body{
         overflow-x: hidden;
     }
+    .tagline{
+        font-size: 100px;
+        text-align: right;
+        line-height: 100px;
+    }
 }
 
 /*tablet screens*/
@@ -411,6 +426,11 @@ section {
     body{
         overflow-x: hidden;
     }
+    .tagline{
+        font-size: 100px;
+        text-align: right;
+        line-height: 100px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -419,6 +439,11 @@ section {
     }
     body{
         overflow-x: hidden;
+    }
+    .tagline{
+        font-size: 100px;
+        text-align: right;
+        line-height: 100px;
     }
 }
 
