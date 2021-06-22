@@ -109,7 +109,7 @@ function getOrder(){
     }
 
 
-    document.getElementById('totalrow').textContent = nPrice;
+    document.getElementById('totalrow').textContent = nPrice+" Kshs";
 
     document.getElementById('crustrow').textContent = pizzaCrust+" ("+pizzaSize+")";
 
