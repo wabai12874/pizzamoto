@@ -248,7 +248,10 @@ section {
         height: 50px;
     }
     #buildpizza{
-        margin-left: 50px;
+        margin-left: 20px;
+        margin-right: 10px;
+        text-align: left;
+
     }
     .labels{
         color: white;
@@ -299,7 +302,9 @@ section {
         height: 50px;
     }
     #buildpizza{
-        margin-left: 50px;
+        margin-left: 20px;
+        margin-right: 10px;
+
     }
     .labels{
         color: white;
@@ -352,7 +357,8 @@ section {
         height: 50px;
     }
     #buildpizza{
-        margin-left: 50px;
+        margin-left: 20px;
+        margin-right: 10px;
     }
     .labels{
         color: white;
@@ -394,7 +400,9 @@ section {
         height: 50px;
     }
     #buildpizza{
-        margin-left: 50px;
+        margin-left: 20px;
+        margin-right: 10px;
+
     }
     .labels{
         color: white;
@@ -430,7 +438,9 @@ section {
         height: 50px;
     }
     #buildpizza{
-        margin-left: 50px;
+        margin-left: 20px;
+        margin-right: 10px;
+
     }
     .labels{
         color: white;
