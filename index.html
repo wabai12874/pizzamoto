@@ -111,38 +111,38 @@
     <section>
         <div id="pizza" class="card" style="background-color: #F54900">
         <div class="card-image">
-            <form action="" id="buildpizza" onsubmit="getOrder(); return false;">
+            <form action="" id="buildpizza" onsubmit="getOrder(); display(); return false;">
                 <label style="margin-top: 30px" class="labels2" for="crust">Build your pizza from the options below.</label><br><br>
 
                 <label class="labels" >Choose Crust</label><br>
                 <select id="crust">
-                    <option value="regular">Regular Crust</option>
-                    <option value="glutenfree">Gluten Free Crust</option>
-                    <option value="stuffed">Stuffed Crust</option>
-                    <option value="thincrispy">Thin Crispy Crust</option>
+                    <option value="Regular">Regular Crust</option>
+                    <option value="Gluten-Free">Gluten Free Crust</option>
+                    <option value="Stuffed">Stuffed Crust</option>
+                    <option value="Thin-Crispy">Thin Crispy Crust</option>
 
                 </select><br>
 
                 <label class="labels" >Choose Flavor</label><br>
                 <select  id="flavour">
-                    <option value="mushroomPepperoni">Mushroom Pepperoni</option>
-                    <option value="babySpinach">Baby Spinach</option>
-                    <option value="hawaiianStyle">Hawaiian Style</option>
-                    <option value="chickenMushroom">Chicken Mushroom</option>
+                    <option value="Mushroom-Pepperoni">Mushroom Pepperoni</option>
+                    <option value="Baby-Spinach">Baby Spinach</option>
+                    <option value="Hawaiian-Style">Hawaiian Style</option>
+                    <option value="Chicken-Mushroom">Chicken Mushroom</option>
 
                 </select><br>
                 <label class="labels" >Select Size</label><br>
                 <select id="size">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
                 </select><br>
 
                 <label class="labels" >Choose extra toppings at 250/=</label><br>
                 <select id="extras">
-                    <option value="bacon">Bacon</option>
-                    <option value="cheese">Cheese</option>
-                    <option value="pepperoni">Pepperoni</option>
+                    <option value="Bacon">Bacon</option>
+                    <option value="Cheese">Cheese</option>
+                    <option value="Pepperoni">Pepperoni</option>
                 </select><br>
 
 
@@ -157,44 +157,42 @@
     </div>
 
         <div id="checkoutcard" class="card">
-            <div class="card-image">
-                <p id="result">Your order will appear here</p>
+            <div class="card-image" style="overflow: hidden">
+                <table class="table" id="result">
+                    <thead>
 
-            <!--
-                <div class="choice">
-                    <h4><br>Checkout</h4>
-                    <div id="your-orders">
-                        <table class="table table-sm  pizzatable">
-                            <thead>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Size</th>
-                                <th scope="col">Crust</th>
-                                <th scope="col">Topping</th>
-                                <th scope="col">Total</th>
-                            </tr>
-                            </thead>
-                            <tbody id="ordersmade">
-                            <tr>
-                                <td id="pizzaname"></td>
-                                <td id="pizzasize"></td>
-                                <td id="pizzacrust"></td>
-                                <td id="pizzatopping"></td>
-                                <td id="totals"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <p id="pizzatotal"></p>
-                        <p id="totalbill"></p>
-                        <p id="addedprice">Delivery will cost sh. 150</p>
-                        <p id="finallmessage"></p>
-                    </div>
-                    <button class="btn btn-orange addPizza">Add Pizza</button>
-                    <button class="btn btn-orange" id="checkout">Checkout</button>
-                    <button class="btn btn-orange deliver">Home delivery?</button>
-                </div>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="border: none">Crust</th>
+                        <td id="crustrow" style="border: none"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="border: none">Flavour</th>
+                        <td id="flavourrow" style="border: none"></td>
 
-                -->
+                    </tr>
+
+                    <tr >
+                        <th scope="row" style="border: none">Size</th>
+                        <td id="sizerow" style="border: none"></td>
+
+                    </tr>
+
+                    <tr>
+                        <th scope="row" style="border: none">Toppings</th>
+                        <td id="toppingsrow" style="border: none"></td>
+
+                    </tr>
+
+                    <tr>
+                        <th scope="row" style="color: black" style="border: none">Total Amount</th>
+                        <td id="totalrow" style="border: none"></td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
 
             </div>
 

@@ -8,10 +8,24 @@ function getOrder(){
     console.log(pizzaFlavour)
     console.log(pizzaSize)
     console.log(pizzaExtras)
-    document.getElementById('result').textContent = "This is  " + pizzaCrust + pizzaFlavour + pizzaSize + pizzaExtras;
+    document.getElementById('crustrow').textContent = pizzaCrust;
+    document.getElementById('flavourrow').textContent = pizzaFlavour;
+    document.getElementById('sizerow').textContent = pizzaSize;
+    document.getElementById('toppingsrow').textContent = pizzaExtras;
+
 
 
 
 
 
 }
+//function to make the table visible
+
+    function display() {
+        document.getElementById("result").style.visibility = "visible";
+        return false;
+    }
+
+
+
+
