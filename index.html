@@ -111,20 +111,20 @@
     <section>
         <div id="pizza" class="card" style="background-color: #F54900">
         <div class="card-image">
-            <form action="" id="buildpizza">
+            <form action="" id="buildpizza" onsubmit="getOrder(); return false;">
                 <label style="margin-top: 30px" class="labels2" for="crust">Build your pizza from the options below.</label><br><br>
 
                 <label class="labels" >Choose Crust</label><br>
                 <select id="crust">
-                    <option value="Crispy">Regular Crust</option>
-                    <option value="Stuffed">Gluten Free Crust</option>
-                    <option value="Gluten-free">Stuffed Crust</option>
-                    <option value="Gluten-free">Thin Crispy Crust</option>
+                    <option value="regular">Regular Crust</option>
+                    <option value="glutenfree">Gluten Free Crust</option>
+                    <option value="stuffed">Stuffed Crust</option>
+                    <option value="thincrispy">Thin Crispy Crust</option>
 
                 </select><br>
 
                 <label class="labels" >Choose Flavor</label><br>
-                <select >
+                <select  id="flavour">
                     <option value="mushroomPepperoni">Mushroom Pepperoni</option>
                     <option value="babySpinach">Baby Spinach</option>
                     <option value="hawaiianStyle">Hawaiian Style</option>
@@ -138,26 +138,13 @@
                     <option value="large">Large</option>
                 </select><br>
 
-                <label class="labels" >Extras at sh. 250 kshs</label><br>
-                <div >
-                    <input type="checkbox" id="extraCheesy" value="extraCheesy" name="toppings">
-                    <label for="extraCheesy" style="color: white; font-size: large">Sausage</label>
-                </div>
+                <label class="labels" >Choose extra toppings at 250/=</label><br>
+                <select id="extras">
+                    <option value="bacon">Bacon</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="pepperoni">Pepperoni</option>
+                </select><br>
 
-                <div >
-                    <input type="checkbox" id="bacon" value="bacon" name="toppings">
-                    <label for="bacon" style="color: white; font-size: large">Bacon Strips</label>
-                </div>
-
-                <div >
-                    <input type="checkbox" id="extraMushroom" value="extraMushrooms" name="toppings">
-                    <label for="extraMushroom" style="color: white; font-size: large">Extra Mushrooms</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="extraSuasage" value="extraSausage" name="toppings">
-                    <label for="extraSuasage" style="color: white; font-size: large">Sausage Wedges</label>
-                </div>
 
                 <br>
                 <button class="submt" type="submit" >Proceed</button>
@@ -169,9 +156,46 @@
 
     </div>
 
-        <div id="toppings14" class="card">
+        <div id="checkoutcard" class="card">
             <div class="card-image">
-                <img src="images/toppings4.png" alt="Card Image">
+                <p id="result">Your order will appear here</p>
+
+            <!--
+                <div class="choice">
+                    <h4><br>Checkout</h4>
+                    <div id="your-orders">
+                        <table class="table table-sm  pizzatable">
+                            <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Crust</th>
+                                <th scope="col">Topping</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                            </thead>
+                            <tbody id="ordersmade">
+                            <tr>
+                                <td id="pizzaname"></td>
+                                <td id="pizzasize"></td>
+                                <td id="pizzacrust"></td>
+                                <td id="pizzatopping"></td>
+                                <td id="totals"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p id="pizzatotal"></p>
+                        <p id="totalbill"></p>
+                        <p id="addedprice">Delivery will cost sh. 150</p>
+                        <p id="finallmessage"></p>
+                    </div>
+                    <button class="btn btn-orange addPizza">Add Pizza</button>
+                    <button class="btn btn-orange" id="checkout">Checkout</button>
+                    <button class="btn btn-orange deliver">Home delivery?</button>
+                </div>
+
+                -->
+
             </div>
 
         </div>
@@ -183,6 +207,8 @@
 
 
 </div>
+
+<script src="main.js" ></script>
 
 </body>
 </html>

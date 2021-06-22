@@ -5,6 +5,13 @@ body{
     background-position: center;
     width: 100%;
 }
+#result{
+    margin-left: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #F54900;
+    margin-top: 20px;
+    font-size: 20px;
+}
 .tagline{
     font-family: 'Monoton', cursive;
     color: white;
