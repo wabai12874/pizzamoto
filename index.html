@@ -22,7 +22,7 @@
         </a>
     </span>
     <span id="logo-img2" style="overflow: hidden">
-        <a href="index.html">
+        <a href="#buildpizza">
             <input type="button" value="View Order" class="vieworder">
         </a>
     </span>
@@ -108,6 +108,50 @@
     <h2 class="section-heading">Build your Own</h2>
 
     <section id="section-source">
+        <form action="" id="buildpizza">
+            <label for="crust">Build your pizza from the options below.</label><br><br>
+            <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                <option value="Crispy">Regular Crust</option>
+                <option value="Stuffed">Gluten Free Crust</option>
+                <option value="Gluten-free">Stuffed Crust</option>
+                <option value="Gluten-free">Thin Crispy Crust</option>
+
+            </select>
+
+            <label for="select">Select Your Flavor</label>
+            <select class="browser-default custom-select custom-select-md mb-3 name">
+                <option selected value="0">Flavour</option>
+                <option value="Chicken Tikka">Chicken Tikka</option>
+                <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+            </select>
+            <label for="select">Select Size</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                <option selected value="0">Select size here</option>
+                <option value="large">Large -- sh. 1200</option>
+                <option value="medium">Medium -- sh. 850</option>
+                <option value="small">Small -- sh. 600</option>
+            </select>
+            <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                <label class="custom-control-label" for="Sausage">Sausage</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                <label class="custom-control-label" for="Bacon">Bacon</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+            </div>
+            <br><br>
+            <button type="submit" class="btn btn-orange proceed">Proceed</button>
+
+        </form>
 
     </section>
 
