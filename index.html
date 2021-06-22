@@ -70,8 +70,8 @@
 
     </section>
 
-    <a href="#pastprojects">
-        <h2 class="section-heading" id="pastprojects">Our flavours</h2>
+    <a href="#flavours">
+        <h2 class="section-heading" id="flavours">Our flavours</h2>
     </a>
 
     <section style="background-color: white">
@@ -107,56 +107,77 @@
 
     <h2 class="section-heading">Build your Own</h2>
 
-    <section id="section-source">
-        <form action="" id="buildpizza">
-            <label for="crust">Build your pizza from the options below.</label><br><br>
-            <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                <option value="Crispy">Regular Crust</option>
-                <option value="Stuffed">Gluten Free Crust</option>
-                <option value="Gluten-free">Stuffed Crust</option>
-                <option value="Gluten-free">Thin Crispy Crust</option>
 
-            </select>
+    <section>
+        <div id="pizza" class="card" style="background-color: #F54900">
+        <div class="card-image">
+            <form action="" id="buildpizza">
+                <label style="margin-top: 30px" class="labels2" for="crust">Build your pizza from the options below.</label><br><br>
 
-            <label for="select">Select Your Flavor</label>
-            <select class="browser-default custom-select custom-select-md mb-3 name">
-                <option selected value="0">Flavour</option>
-                <option value="Chicken Tikka">Chicken Tikka</option>
-                <option value="PeriPeri Pizza">PeriPeri Pizza</option>
-                <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
-                <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
-                <option value="Sunchoke Pizza">Sunchoke Pizza</option>
-                <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
-            </select>
-            <label for="select">Select Size</label>
-            <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                <option selected value="0">Select size here</option>
-                <option value="large">Large -- sh. 1200</option>
-                <option value="medium">Medium -- sh. 850</option>
-                <option value="small">Small -- sh. 600</option>
-            </select>
-            <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
-            <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
-                <label class="custom-control-label" for="Sausage">Sausage</label>
-            </div>
-            <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
-                <label class="custom-control-label" for="Bacon">Bacon</label>
-            </div>
-            <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
-                <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-            </div>
-            <br><br>
-            <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                <label class="labels" >Choose Crust</label><br>
+                <select id="crust">
+                    <option value="Crispy">Regular Crust</option>
+                    <option value="Stuffed">Gluten Free Crust</option>
+                    <option value="Gluten-free">Stuffed Crust</option>
+                    <option value="Gluten-free">Thin Crispy Crust</option>
 
-        </form>
+                </select><br>
+
+                <label class="labels" >Choose Flavor</label><br>
+                <select >
+                    <option value="mushroomPepperoni">Mushroom Pepperoni</option>
+                    <option value="babySpinach">Baby Spinach</option>
+                    <option value="hawaiianStyle">Hawaiian Style</option>
+                    <option value="chickenMushroom">Chicken Mushroom</option>
+
+                </select><br>
+                <label class="labels" >Select Size</label><br>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+
+                <label class="labels" >Extras at sh. 250 kshs</label><br>
+                <div >
+                    <input type="checkbox" id="extraCheesy" value="extraCheesy" name="toppings">
+                    <label for="extraCheesy" style="color: white; font-size: large">Sausage</label>
+                </div>
+
+                <div >
+                    <input type="checkbox" id="bacon" value="bacon" name="toppings">
+                    <label for="bacon" style="color: white; font-size: large">Bacon Strips</label>
+                </div>
+
+                <div >
+                    <input type="checkbox" id="extraMushroom" value="extraMushrooms" name="toppings">
+                    <label for="extraMushroom" style="color: white; font-size: large">Extra Mushrooms</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="extraSuasage" value="extraSausage" name="toppings">
+                    <label for="extraSuasage" style="color: white; font-size: large">Sausage Wedges</label>
+                </div>
+
+                <br>
+                <button class="submt" type="submit" >Proceed</button>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+        <div id="toppings14" class="card">
+            <div class="card-image">
+                <img src="images/toppings4.png" alt="Card Image">
+            </div>
+
+        </div>
+
 
     </section>
-
-
-
 
 </main>
 
