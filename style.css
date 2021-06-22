@@ -69,13 +69,13 @@ body{
 
 .vieworder{
     border: none;
-    background: #F54900;
-    color: white;
+    background: transparent;
+    color: #F54900;
     border-radius: 50px;
     height: 50px;
     width: 150px;
     margin-top: 10px;
-    margin-right: 5px;
+    margin-right: -20px;
 }
 
 .makeorder{
