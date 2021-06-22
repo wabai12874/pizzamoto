@@ -190,6 +190,13 @@
 
                     </tr>
 
+
+                    <tr>
+                        <th scope="row" style="border: none">Delivery</th>
+                        <td id="deliveryrow" style="border: none"></td>
+
+                    </tr>
+
                     <tr>
                         <th scope="row" style="color: black" style="border: none">Total Amount</th>
                         <td id="totalrow" style="border: none; font-size: 25px; color: black"></td>
@@ -198,6 +205,16 @@
 
                     </tbody>
                 </table>
+                <input type="button" value="Confirm Order" id="orderconfirm" onclick="display2(); alertbox() ">
+                <input type="button" value="New Order" id="order2">
+
+                <p id="qn">Enter your phone number below to confirm your order</p>
+                <form onsubmit=" getNumber(); return false">
+                <input id="phonenumber" type="number" required><br>
+                <button type="Submit" id="confirmphone">Place Order</button>
+                </form>
+
+
 
             </div>
 
