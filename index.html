@@ -192,7 +192,7 @@
 
 
                     <tr>
-                        <th scope="row" style="border: none">Delivery</th>
+                        <th  id="delrow" scope="row" style="border: none; visibility: hidden">Delivery</th>
                         <td id="deliveryrow" style="border: none"></td>
 
                     </tr>
@@ -210,9 +210,10 @@
                 <input type="button" value="New Order" id="order2">
                 </a>
 
-                <p id="qn">Enter your phone number below to confirm your order</p>
+                <p id="qn">Enter your phone number below and zone of pickup within Nairobi to confirm your order</p>
                 <form onsubmit=" getNumber(); return false">
-                <input id="phonenumber" type="number" required><br>
+                <input id="phonenumber" type="number" required placeholder="Phone no"><input id="zone" type="text" required placeholder="Pickup zone"><br>
+                    <br>
                 <button type="Submit" id="confirmphone">Place Order</button>
                 </form>
 

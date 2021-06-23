@@ -147,6 +147,7 @@ function getOrder(){
 function display2() {
     document.getElementById("qn").style.visibility = "visible";
     document.getElementById("phonenumber").style.visibility = "visible";
+    document.getElementById("zone").style.visibility = "visible";
     document.getElementById("confirmphone").style.visibility = "visible";
 
 
@@ -154,16 +155,24 @@ function display2() {
     return false;
 }
 
+
+
+
+
 function alertbox() {
     window.alert("Due to Covid-19 Restrictions, we only do deliveries within Nairobi at a fixed charge of 200Kshs.");
 }
 
 function getNumber(){
     let number = document.getElementById("phonenumber").value;
+    let zone = document.getElementById("zone").value;
+
+
     delivery=200;
     final=nPrice+delivery;
-    window.alert("Thankyou for your order. Our delivery team will reach you on +254" +number+" within the next hour when the order has been dispatched. Your total payable plus delivery fee is\n" +final+" Kshs.")
+    window.alert("Thankyou. Your order will be delivered to "+zone+", Nairobi"+ ". Our delivery team will reach you on +254" +number+" within the next hour when the order has been dispatched. Your total payable plus delivery fee is\n" +final+" Kshs.")
 
+    document.getElementById("delrow").style.visibility = "visible";
     document.getElementById('deliveryrow').textContent = delivery+" Kshs";
     document.getElementById('totalrow').textContent = final+" Kshs";
 
@@ -171,6 +180,7 @@ function getNumber(){
     document.getElementById("phonenumber").style.visibility = "hidden";
     document.getElementById("confirmphone").style.visibility = "hidden";
     document.getElementById("orderconfirm").style.visibility = "hidden";
+    document.getElementById("zone").style.visibility = "hidden";
     document.getElementById("order2").style.visibility = "visible";
 
 
