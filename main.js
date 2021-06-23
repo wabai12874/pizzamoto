@@ -1,3 +1,4 @@
+//function to get the input of the user and key it into the order table and for price computation
 function getOrder(){
     let pizzaCrust = document.getElementById("crust").value;
     let pizzaFlavour = document.getElementById("flavour").value;
@@ -107,33 +108,40 @@ function getOrder(){
         xCost=250;
         nPrice=newprice+xCost;
     }
-
-
     document.getElementById('totalrow').textContent = nPrice+" Kshs";
-
     document.getElementById('crustrow').textContent = pizzaCrust+" ("+pizzaSize+")";
-
     document.getElementById('flavourrow').textContent = pizzaFlavour +" (at " +toppin+"/=)";
-
     document.getElementById('sizerow').textContent = pizzaSize+" (at "+initPrice+"/=)";
-
     document.getElementById('toppingsrow').textContent = pizzaExtras+" (at "+xCost+"/=)";
+}
+//constructor function to build pizza
 
-
-//fill form in checkout2
-
-
-
-
-
-
-
+function buildPizza(pizza){
+    pizza={}
+    pizza.pizzaCrust;
+    pizza.pizzaFlavour;
+    pizza.pizzaSize;
+    pizza.pizzaExtras;
+    return{
+        pizza,
+    }
 
 
 }
+function pizza(){
+    let pizzaCrust = document.getElementById("crust").value;
+    let pizzaFlavour = document.getElementById("flavour").value;
+    let pizzaSize = document.getElementById("size").value;
+    let pizzaExtras = document.getElementById("extras").value;
+    this.pizzaCrust= pizzaCrust;
+    this.pizzaFlavour=pizzaFlavour;
+    this.pizzaSize=pizzaSize;
+    this.pizzaExtras=pizzaExtras;
 
 
+    const pizza=new pizza();
 
+}
 
 //function to make the table visible
 
@@ -144,55 +152,43 @@ function getOrder(){
         return false;
     }
 
+    //function to make the enter phone number and zone of pickup visible to the user after he or she accepts the prompts
+
 function display2() {
     document.getElementById("qn").style.visibility = "visible";
     document.getElementById("phonenumber").style.visibility = "visible";
     document.getElementById("zone").style.visibility = "visible";
     document.getElementById("confirmphone").style.visibility = "visible";
-
-
-
     return false;
 }
-
-
-
-
-
+//function to alert the user that deliveries are the only option due to the covid 19 precaution protocols.
 function alertbox() {
     window.alert("Due to Covid-19 Restrictions, we only do deliveries within Nairobi at a fixed charge of 200Kshs.");
 }
 
+//function to get the phone number and zone of delivery for the pizza to be delivered.
 function getNumber(){
     let number = document.getElementById("phonenumber").value;
     let zone = document.getElementById("zone").value;
-
-
     delivery=200;
     final=nPrice+delivery;
     window.alert("Thankyou. Your order will be delivered to "+zone+", Nairobi"+ ". Our delivery team will reach you on +254" +number+" within the next hour when the order has been dispatched. Your total payable plus delivery fee is\n" +final+" Kshs.")
-
+//shows new total price for the user after user accepts delivery option.
     document.getElementById("delrow").style.visibility = "visible";
     document.getElementById('deliveryrow').textContent = delivery+" Kshs";
     document.getElementById('totalrow').textContent = final+" Kshs";
-
+//hides the elements after order completion and displays function for new order to be received.
     document.getElementById("qn").style.visibility = "hidden";
     document.getElementById("phonenumber").style.visibility = "hidden";
     document.getElementById("confirmphone").style.visibility = "hidden";
     document.getElementById("orderconfirm").style.visibility = "hidden";
     document.getElementById("zone").style.visibility = "hidden";
     document.getElementById("order2").style.visibility = "visible";
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
 
 
 
