@@ -116,32 +116,35 @@ function getOrder(){
 }
 //constructor function to build pizza
 
-function buildPizza(pizza){
-    pizza={}
-    pizza.pizzaCrust;
-    pizza.pizzaFlavour;
-    pizza.pizzaSize;
-    pizza.pizzaExtras;
-    return{
-        pizza,
-    }
 
+var pizzaBuild = function pizza(pizzaCrust, pizzaFlavour, pizzaSize, pizzaExtras){
 
-}
-function pizza(){
-    let pizzaCrust = document.getElementById("crust").value;
-    let pizzaFlavour = document.getElementById("flavour").value;
-    let pizzaSize = document.getElementById("size").value;
-    let pizzaExtras = document.getElementById("extras").value;
-    this.pizzaCrust= pizzaCrust;
+    this.pizzaCrust=pizzaCrust;
     this.pizzaFlavour=pizzaFlavour;
     this.pizzaSize=pizzaSize;
     this.pizzaExtras=pizzaExtras;
 
-
-    const pizza=new pizza();
-
 }
+
+function buildYourPizza(){
+    let crust= document.getElementById("crust").value;
+    let flavour= document.getElementById("flavour").value;
+    let size = document.getElementById("size").value;
+    let extras=document.getElementById("extras").value;
+    console.log(crust)
+    console.log(flavour)
+    console.log(size)
+    console.log(extras)
+
+    var pizzaBuild= function pizza(crust, flavour, size, extras){
+
+    }
+
+    newPizza= new pizzaBuild(crust, flavour, size, extras)
+}
+
+
+
 
 //function to make the table visible
 
