@@ -152,6 +152,8 @@ function buildYourPizza(){
         document.getElementById("result").style.visibility = "visible";
         document.getElementById("orderconfirm").style.visibility = "visible";
 
+
+
         return false;
     }
 
@@ -175,7 +177,7 @@ function getNumber(){
     let zone = document.getElementById("zone").value;
     delivery=200;
     final=nPrice+delivery;
-    window.alert("Thankyou. Your order will be delivered to "+zone+", Nairobi"+ ". Our delivery team will reach you on +254" +number+" within the next hour when the order has been dispatched. Your total payable plus delivery fee is\n" +final+" Kshs.")
+    window.alert("Thankyou. Your order will be delivered to "+zone+", Nairobi"+ ". Our delivery team will reach you on " +number+" within the next hour when the order has been dispatched. Your total payable plus delivery fee is\n" +final+" Kshs.")
 //shows new total price for the user after user accepts delivery option.
     document.getElementById("delrow").style.visibility = "visible";
     document.getElementById('deliveryrow').textContent = delivery+" Kshs";
@@ -188,6 +190,9 @@ function getNumber(){
     document.getElementById("zone").style.visibility = "hidden";
     document.getElementById("order2").style.visibility = "visible";
 }
+
+
+
 
 
 

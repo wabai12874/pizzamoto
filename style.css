@@ -382,6 +382,15 @@ body{
     width: 200px;
     height: 40px;
 }
+.submt2{
+    margin-bottom: 30px;
+    background-color: white;
+    visibility: hidden;
+    color: #F54900;
+    border: none;
+    width: 200px;
+    height: 40px;
+}
 
 html{
     scroll-behavior: smooth;
